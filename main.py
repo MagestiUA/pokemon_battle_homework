@@ -4,7 +4,6 @@ import asyncio
 import random
 
 async def fetch_json(session, url):
-	"""Функція для виконання запиту та отримання JSON-відповіді."""
 	async with session.get(url) as response:
 		return await response.json()
 
